@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: #121826;
+    --form-bg:#212936;
+}
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container{
+    height: 100%;
+}
+
+.container>div{
+    position: relative;
+    width: 28rem;
+    height: 20.5rem;
+}
+
+.container>div img{
+    position: absolute;
+    left: -8rem;
+    top: -8rem;
+    z-index: -10;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    background-color: var(--form-bg);
+    box-shadow: -1px -1px 5px #ffffff36;
+}
+form div:nth-of-type(2){
+    margin-bottom: 35px;
+}
+label{
+    font-size: 13px;
+    color: #A1A1A9;
+}
+
+input::placeholder{
+    color: white !important;
+    font-size: 12px;
+}
+input{
+    border: .2px solid #4D5562 !important;
+    outline: none !important;
+}
+input:focus{
+     box-shadow: none !important;
+}
+
+.btn{
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-image: linear-gradient(to bottom , #845EEE,#5425AF);
+}
+.btn:focus{
+    border: none;
+    outline: none;
+}
+.btn.disabled{
+    border: none;
+}
+.bullets p{
+    color: #A1A1A9;
+    font-size: 13px;
+}
+.bullets div{
+    width: 8px;
+    height: 8px;
+    background-color: #4D5562;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bullets div.active{
+    background-color: #5425AF;
+    box-shadow: 0 0 1px 4px #845eee47;
+}
+
+.choice{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #394150;
+    color: #E5E7EB;
+    font-size: 14px;
+}
+.choice:hover{
+    background-color: #5425AF;
+    cursor: pointer;
+}
